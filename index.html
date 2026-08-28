@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <title>aresinhoo's VM's</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="build/libv86.js"></script>
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <div class="sidebar">
+            <a href="#" class="htmlChange1" data-page="os-selection">OS Selection</a>
+            <a href="#" class="htmlChange1" data-page="credits">Credits</a>
+            <a href="#" class="htmlChange1" data-page="help">Help</a>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <h1 class="name">Aresinhoo's VM's</h1>
+            </div>
+
+            <div class="content">
+
+                <!-- OS SELECTION PAGE -->
+                <section id="os-selection" class="page active">
+
+                    <div class="os-grid">
+                        <div class="os-card" data-iso="images/TinyCore-current.iso" data-name="TinyCore GUI">
+                            <h3>TinyCore GUI</h3>
+                            <p>Lightweight desktop with a taskbar and app launcher.</p>
+                            <button class="launch-btn">Launch</button>
+                        </div>
+
+                        <div class="os-card" data-iso="images/Core-current.iso" data-name="TinyCore">
+                            <h3>TinyCore Linux</h3>
+                            <p>Lightweight and minimal Linux command line</p>
+                            <button class="launch-btn">Launch</button>
+                        </div>
+
+                        <div class="os-card" data-iso="images/slitaz-cooking.iso" data-name="SliTaz">
+                            <h3>SliTaz</h3>
+                            <p>Free, lightweight, small Linux distro</p>
+                            <button class="launch-btn">Launch</button>
+                        </div>
+
+                        <div class="os-card" data-iso="images/kolibrios-0.7.7.0-9171-gf143ca192-en_US.iso" data-name="KolibriOS">
+                            <h3>KolibriOS</h3>
+                            <p>Retro style Linux distro</p>
+                            <button class="launch-btn">Launch</button>
+                        </div>
+                    </div>
+
+                    <div id="vm-stage" class="vm-stage hidden">
+                        <div class="vm-header">
+                            <span id="vm-title">—</span>
+                            <button id="vm-close">✕</button>
+                        </div>
+
+                        <div id="screen_container">
+                            <div id="vm-term" style="white-space: pre; font: 14px monospace; line-height: 14px;"></div>
+                            <canvas style="display: none"></canvas>
+                        </div>
+
+                        <div class="vm-controls">
+                            <button id="vm-start">Start</button>
+                            <button id="vm-pause">Pause</button>
+                            <button id="vm-restart">Restart</button>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- CREDITS PAGE -->
+                <section id="credits" class="page">
+                    <h2>Credits</h2>
+                    <ul class="credit-list">
+                        <li><strong>v86</strong> — x86 emulator powering every VM here, by copy (github.com/copy/v86)</li>
+                        <li><strong>TinyCore Linux</strong> — Tiny Core Linux OS images</li>
+                        <li><strong>SliTaz Community</strong> - SliTaz OS images</li>
+                        <li><strong>KolibriOS Project Team</strong> - KolibriOS OS images</li>
+                        <li><strong>Built by</strong> Aresinhoo</li>
+                    </ul>
+                </section>
+
+                <!-- HELP PAGE -->
+                <section id="help" class="page">
+                    <h2>Help</h2>
+                    <ol class="help-list">
+                        <li>Pick an OS card and hit <strong>Launch</strong>.</li>
+                        <li>The VM boots inside the black screen area below the cards.</li>
+                        <li>Use <strong>Start / Pause / Restart</strong> to control it.</li>
+                        <li>Click the <strong>✕</strong> to shut the VM down and pick another OS.</li>
+                    </ol>
+                </section>
+
+            </div>
+        </div>
+
+        <footer></footer>
+    </body>
+</html>

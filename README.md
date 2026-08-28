@@ -8,6 +8,7 @@ Pick an OS from the selection screen and it boots right in your browser tab.
 
 - **TinyCore GUI** — lightweight desktop, fast boot
 - **KolibriOS** — tiny (~1.3MB) custom OS with a full GUI, boots almost instantly
+- **SliTazOS** — small and lightweight community made OS
 
 More can be added — see [Adding a new OS](#adding-a-new-os) below.
 
@@ -73,9 +74,9 @@ No JavaScript changes needed — `script.js` reads the ISO path and name straigh
 ## Credits
 
 - [v86](https://github.com/copy/v86) — the x86 emulator powering every VM here, by [copy](https://github.com/copy)
-- [TinyCore Linux](http://www.tinycorelinux.net/) / [KolibriOS](https://kolibrios.org/) — the OS images
+- [TinyCore Linux](http://www.tinycorelinux.net/) / [KolibriOS](https://kolibrios.org/) / [SliTaz](https://www.slitaz.org/) — the OS images
 - Built by **Aresinhoo**
 
 ## License
 
-See [COPYING.LESSER](COPYING.LESSER) for v86's LGPL license. Project code otherwise unlicensed — ask before reuse.
+Project code is licensed under the [MIT License](LICENSE). See [COPYING.LESSER](COPYING.LESSER) for v86's separate LGPL license, which applies to the v86 emulator itself.
